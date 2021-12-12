@@ -1,12 +1,11 @@
 package test.java.com.uni;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import org.junit.jupiter.api.Test;
-
 import main.java.com.uni.Game;
 import main.java.com.uni.GameBoard;
 import main.java.com.uni.Tile;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class PBHummel009 {
 	
@@ -16,7 +15,7 @@ public class PBHummel009 {
 		game.start();
 		assertEquals(game.isRunning(), true);
 	}
-	
+
 	@Test
 	void testSpawn() {
 		GameBoard game = new GameBoard(0, 0);
